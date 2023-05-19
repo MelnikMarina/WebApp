@@ -113,5 +113,5 @@ var j=0;
   }
 
 function show_cart(){
-     tg.sendData("hello");
+     tg.sendData(cart);
   }
