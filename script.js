@@ -94,7 +94,7 @@ var j=0;
     carts[i].addEventListener('click', ()=>{
       var btn = products[i].id_product;
       cartNumbers(products[i]);
-      cart.push(products[i]);
+      cart.push(products[i].name);
     })
   }
 
