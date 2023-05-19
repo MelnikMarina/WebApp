@@ -112,3 +112,7 @@ var j=0;
       document.querySelector("#number-added").textContent=1;
     }
   }
+
+function show_cart(){
+    tg.sendData(cart);
+}
