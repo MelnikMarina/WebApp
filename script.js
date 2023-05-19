@@ -113,6 +113,6 @@ var j=0;
   }
 
 function show_cart(){
-    for(int i=0 i<cart.length;i++){
-      tg.sendData(cart[i]);
+//     for(int i=0 i<cart.length;i++){
+      tg.sendData("hello");
   }
