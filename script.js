@@ -87,6 +87,7 @@ let products=[
 ];
 
 var cart=[];
+var cart_id=[];
 var j=0;
   localStorage.clear();
   let carts = document.querySelectorAll(".btn");
@@ -94,6 +95,7 @@ var j=0;
     carts[i].addEventListener('click', ()=>{
       var btn = products[i].id_product;
       cartNumbers(products[i]);
+      cart_id.push(products[i].id_product);
       cart.push(products[i].name);
 //       tg.sendData(products[i].id_product);
     })
@@ -113,13 +115,13 @@ var j=0;
     }
   }
 
-  let img= document.querySelector("#cart");
-  img.addEventListener('click', ()=>{
-     for(let i=0;i<products.length;i++){
-       tg.sendData(products[i].id_product);
-     }
-  })
+//   let img= document.querySelector("#cart");
+//   img.addEventListener('click', ()=>{
+//      for(let i=0;i<products.length;i++){
+//        tg.sendData(products[i].id_product);
+//      }
+//   })
 function show_cart(){
-     alert("leeeeeshow");
      tg.sendData(cart);
+     tg.sendData(cart_id);
   }
