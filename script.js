@@ -1,4 +1,7 @@
 let tg = window.Telegram.WebApp;
+tg.MainButton.text = "To Selmot Bot!";
+tg.MainButton.textColor = "white";
+tg.MainButton.color = "black";
 
 function myFunction() {
   var input, filter, row, item, h4, i, txtValue;
@@ -95,6 +98,7 @@ var j=0;
       var btn = products[i].id_product;
       cartNumbers(products[i]);
       cart.push(products[i].name);
+      tg.MainButton.show();
     })
   }
 
@@ -112,12 +116,12 @@ var j=0;
     }
   }
 
-  let img= document.querySelector("#cart");
-  img.addEventListener('click', ()=>{
-    alert("leeeee");
-    show_cart();
-  })
-function show_cart(){
-     alert("leeeeeshow");
-     tg.sendData(cart);
-  }
+//   let img= document.querySelector("#cart");
+//   img.addEventListener('click', ()=>{
+//     alert("leeeee");
+//     show_cart();
+//   })
+// function show_cart(){
+//      alert("leeeeeshow");
+//      tg.sendData(cart);
+//   }
