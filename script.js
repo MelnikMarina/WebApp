@@ -122,6 +122,5 @@ var j=0;
 //      }
 //   })
 function show_cart(){
-     tg.sendData(cart);
      tg.sendData(cart_id);
   }
