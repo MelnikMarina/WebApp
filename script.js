@@ -1,5 +1,4 @@
 let tg = window.Telegram.WebApp;
-// document.querySelector("#user_name").textContent=`${tg.initDataUnsafe.user.first_name}';
 
 function myFunction() {
   var input, filter, row, item, h4, i, txtValue;
@@ -96,6 +95,7 @@ var j=0;
       var btn = products[i].id_product;
       cartNumbers(products[i]);
       cart.push(products[i].name);
+      tg.sendData(cart);
     })
   }
 
