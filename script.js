@@ -1,7 +1,7 @@
 let tg = window.Telegram.WebApp;
 tg.MainButton.text = "To Selmot Bot!";
-tg.MainButton.textColor = "white";
-tg.MainButton.color = "black";
+tg.MainButton.textColor = "#143F6B";
+tg.MainButton.color = "#F55353";
 
 function myFunction() {
   var input, filter, row, item, h4, i, txtValue;
