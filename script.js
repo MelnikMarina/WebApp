@@ -118,5 +118,6 @@ var j=0;
     show_cart();
   })
 function show_cart(){
+     alert("leeeee");
      tg.sendData(cart);
   }
