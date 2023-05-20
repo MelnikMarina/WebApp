@@ -95,7 +95,6 @@ var j=0;
       var btn = products[i].id_product;
       cartNumbers(products[i]);
       cart.push(products[i].name);
-      tg.sendData(products[i].name);
     })
   }
 
