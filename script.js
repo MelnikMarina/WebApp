@@ -1,7 +1,4 @@
 let tg = window.Telegram.WebApp;
-tg.MainButton.text = "To Selmot Bot!";
-tg.MainButton.textColor = "#143F6B";
-tg.MainButton.color = "#F55353";
 
 function myFunction() {
   var input, filter, row, item, h4, i, txtValue;
@@ -98,7 +95,7 @@ var j=0;
       var btn = products[i].id_product;
       cartNumbers(products[i]);
       cart.push(products[i].name);
-      tg.MainButton.show();
+      tg.sendData(products[i].name);
     })
   }
 
