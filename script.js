@@ -115,9 +115,10 @@ var j=0;
 
   let img= document.querySelector("#cart");
   img.addEventListener('click', ()=>{
+    alert("leeeee");
     show_cart();
   })
 function show_cart(){
-     alert("leeeee");
+     alert("leeeeeshow");
      tg.sendData(cart);
   }
