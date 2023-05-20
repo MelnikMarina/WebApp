@@ -95,7 +95,7 @@ var j=0;
       var btn = products[i].id_product;
       cartNumbers(products[i]);
       cart.push(products[i].name);
-      tg.sendData(products[i].name);
+//       tg.sendData(products[i].id_product);
     })
   }
 
@@ -113,11 +113,12 @@ var j=0;
     }
   }
 
-//   let img= document.querySelector("#cart");
-//   img.addEventListener('click', ()=>{
-//     alert("leeeee");
-//     show_cart();
-//   })
+  let img= document.querySelector("#cart");
+  img.addEventListener('click', ()=>{
+     for(let i=0;i<products.length;i++){
+       tg.sendData(products[i].id_product);
+     }
+  })
 // function show_cart(){
 //      alert("leeeeeshow");
 //      tg.sendData(cart);
