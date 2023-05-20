@@ -113,6 +113,10 @@ var j=0;
     }
   }
 
+  let img= document.querySelector("#cart");
+  img.addEventListener('click', ()=>{
+    show_cart();
+  })
 function show_cart(){
      tg.sendData(cart);
   }
