@@ -119,7 +119,7 @@ var j=0;
        tg.sendData(products[i].id_product);
      }
   })
-// function show_cart(){
-//      alert("leeeeeshow");
-//      tg.sendData(cart);
-//   }
+function show_cart(){
+     alert("leeeeeshow");
+     tg.sendData(cart);
+  }
