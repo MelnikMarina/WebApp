@@ -1,4 +1,5 @@
 let tg = window.Telegram.WebApp;
+document.querySelector("#user_name").textContent=tg.initDataUnsafe.user.first_name;
 
 function myFunction() {
   var input, filter, row, item, h4, i, txtValue;
